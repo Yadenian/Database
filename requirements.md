@@ -21,7 +21,7 @@
    * Проверка логов
    
 ## Схема базы данных
-![alt text](https://github.com/Yadenian/Database/blob/main/SUBD-Yanushonok.drawio.png)
+![alt text](https://github.com/Yadenian/Database/blob/main/SUBD-Yanushonok.drawio%20(1).png)
 
 ## Сущности
 
