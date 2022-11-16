@@ -20,3 +20,38 @@
    * Редактирование информации о пользователе
    * Проверка логов
    
+
+![alt text](https://github.com/Yadenian/Database/blob/main/SUBD-Yanushonok.drawio.png)
+
+## Сущности
+
+* **User** - все имеющиеся пользователи
+      * **UserID(uuid)** - идентификатор пользователя, Many to One к роли.
+      * **RoleID(uuid)** - идентификатор роли
+      * **Name(varchar(20))** - имя пользователя
+      * **Surname(varchar(20))** - фамилия пользователя
+      * **LastName(varchar(20))** - отчество пользователя
+      * **PhoneNumber(varchar(32))** - номер пользователя
+      * **Email(varchar(32))** = эл. почта пользователя
+      * **Password(varchar(250))** - пароль
+* **Role** - роли пользователей
+      * **RoleID(uuid)** - идентификатор роли
+      * **Name(varchar(20))** - название роли
+* **Log** - логи пользователей
+      * **UserID(uuid)** - идентификатор пользователя
+      * **Info(varchar(120))** - информация о действиях пользователя
+      * **Time(datetime)** - время, когда было совершено действие
+* **Order** - заказ пользователя
+      * **User(varchar(20))** - пользователь
+      * **Date(datetime)** - дата оформления заказа
+      * **ProductID(uuid)** - идентификатор продукта
+      * **PaymentDetails(varchar(120))** - детали оплаты
+      * **OrderID(uuid)** - идентификатор заказа
+* **Bycicle** - продукт(велосипед)
+      * **ProductID(uuid)** - идентификатор продукта
+      * **Category(varchar(120))** - категория продукта
+      * **Name(varchar(120))** - название продукта
+      * **Discription(varchar(120)) - описание продукта
+      * **Avaliability(bit)** - доступность
+      * **Manufacturer(varchar(120))** - производитель
+*
