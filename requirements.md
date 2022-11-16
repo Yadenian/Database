@@ -20,7 +20,7 @@
    * Редактирование информации о пользователе
    * Проверка логов
    
-
+## Схема базы данных
 ![alt text](https://github.com/Yadenian/Database/blob/main/SUBD-Yanushonok.drawio.png)
 
 ## Сущности
