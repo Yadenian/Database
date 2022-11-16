@@ -51,7 +51,16 @@
    * **ProductID(uuid)** - идентификатор продукта
    * **Category(varchar(120))** - категория продукта
    * **Name(varchar(120))** - название продукта
-   * **Discription(varchar(120)) - описание продукта
+   * **Discription(varchar(120))** - описание продукта
    * **Avaliability(bit)** - доступность
    * **Manufacturer(varchar(120))** - производитель
-*
+* **Category** - категория продукта
+   * **CategoryID(uuid)** - идентификатор категории продукта
+   * **CategoryName(varchar(64))** - название категории
+* **Manufacturer** - производитель велосипеда
+   * **Name(varchar(64))** - название бренда
+   * **Country(varchar(64))** - название страны производителя
+   * **ManufacturerID(uuid)** - идентификатор производителя
+* **BycicleStatus** - статус продукта
+   * **ProductID(uuid)** - идентификатор продукта
+   * **ProductStatus(bit)** - статус наличия продукта на складе
